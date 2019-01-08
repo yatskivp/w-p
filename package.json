@@ -1,0 +1,31 @@
+{
+  "name": "polymer-webpack",
+  "flat": true,
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "ejs-loader": "^0.3.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^5.2.0",
+    "path": "^0.12.7",
+    "wct-mocha": "^1.0.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline",
+    "build": "(webpack && echo \"Success build\") || echo \"Fail build\"",
+    "build:prod": "(webpack --env.NODE_ENV=production --optimize-minimize && echo \"Success build\") || echo \"Fail build\""
+  }
+}

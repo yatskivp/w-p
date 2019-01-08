@@ -1,0 +1,6 @@
+{
+  "name": "polymer-webpack",
+  "short_name": "polymer-webpack",
+  "start_url": "/",
+  "display": "standalone"
+}
